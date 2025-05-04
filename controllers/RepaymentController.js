@@ -1,7 +1,7 @@
 const repaymentService = require('../services/RepaymentService');
 
 class RepaymentController {
-  // Controller to fetch repayment schedule
+ 
   async getRepaymentSchedule(req, res) {
     try {
       const { userId } = req.params;
@@ -17,20 +17,17 @@ class RepaymentController {
     }
   }
 
-  // Controller to make a payment
   async makePayment(req, res) {
     try {
       const { userId, repaymentId } = req.params;
-      console.log(userId +" " + repaymentId);
       const updatedRepayment = await repaymentService.makePayment(userId, repaymentId);
-        console.log(updatedRepayment);
+       
       res.json({ message: 'Payment completed successfully', data: updatedRepayment });
     } catch (error) {
       res.status(500).json({ error: error.message });
     }
   }
 
-  // Controller to fetch outstanding balance
   async getOutstandingBalance(req, res) {
     try {
       const { userId } = req.params;
@@ -43,8 +40,6 @@ class RepaymentController {
     }
   }
 
-//   // NEW: Controller to fetch total outstanding payment based on PENDING status
-  
 }
 
 module.exports = new RepaymentController();
