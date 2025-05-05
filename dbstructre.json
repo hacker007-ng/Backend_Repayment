@@ -1,7 +1,7 @@
 [
     {
       "userId": "user1@gmail.com",
-      "applicationId": "SS-1234",
+      "applicationId": "PL-7840",
       "principalAmount": 100000,
       "period": 10,
       "interestRate": 10,
@@ -120,7 +120,7 @@
     },
     {
       "userId": "user2@gmail.com",
-      "applicationId": "SS-5678",
+      "applicationId": "VL-5678",
       "principalAmount": 50000,
       "period": 5,
       "interestRate": 12,
@@ -184,7 +184,7 @@
     },
     {
       "userId": "user3@gmail.com",
-      "applicationId": "SS-9101",
+      "applicationId": "HL-9101",
       "principalAmount": 0,
       "period": 0,
       "interestRate": 0,
