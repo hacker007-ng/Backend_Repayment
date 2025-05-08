@@ -24,7 +24,7 @@ const tableRepaymentSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    enum: ['PENDING', 'COMPLETED'],
+    enum: ['DUE', 'COMPLETED'],
     required: true,
   },
   dueDate: {
